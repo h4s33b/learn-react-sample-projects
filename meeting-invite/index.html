@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <title>Meeting Invite</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
