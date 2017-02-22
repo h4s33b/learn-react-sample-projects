@@ -25,4 +25,4 @@ In <b>actionTypes</b> we have declared our action types.
 <b>inviteReducer</b> is our application reducer that is managing state.
 
 
-<h4>Note: This Explanation is based on my own Understanding. Feel free to update a readme and send me a pull request. I will me happy to merge. Thanks</h4>
+<h4>Note: This Explanation is based on my own Understanding. Feel free to update a readme and send me a pull request. I will be more than happy to merge. Thanks</h4>
