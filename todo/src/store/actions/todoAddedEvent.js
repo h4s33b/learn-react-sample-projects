@@ -1,3 +1,6 @@
+import ActionTypes from './actionTypes';
+import database from '../../configs/dbconfigs';
+
 export function watchToDoAddedEvent(dispatch) {
     database.ref('/todos').on('child_added', (snap) => {
         dispatch(getGuestAddedAction(snap.val()));
@@ -6,7 +9,7 @@ export function watchToDoAddedEvent(dispatch) {
 
 function getGuestAddedAction(todos) {
     return {
-        type: ActionTypes.GuestAdded,
+        type: ActionTypes.getToDoFulfilled,
         todos
     };
 }

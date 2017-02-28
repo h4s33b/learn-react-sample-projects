@@ -32,7 +32,6 @@ function getTodoRejectedAction() {
 
 function getTodoFulfilledAction(todos) {
   return {
-    type: ActionTypes.getToDoFulfilled,
-    todos
+    type: ActionTypes.getToDoFulfilled
   };
 }

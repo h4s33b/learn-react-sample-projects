@@ -8,8 +8,6 @@ export function todoReducer(state = {}, action) {
                 success: 'Added guest.'
             });
             newState.todos = newState.todos || [];
-            newState.todos = newState.todos.slice();
-            newState.todos.push(action.todo);
             return newState;
         }
         case ActionTypes.getToDoFulfilled: {
@@ -18,11 +16,9 @@ export function todoReducer(state = {}, action) {
                 success: 'Get.'
             });
             newState.todos = newState.todos || [];
-            newState.todos = newState.todos.slice();
-            action.todos.forEach(element=>{
-                newState.todos.push(element);
-            })
-            //newState.todos.push(action.todos);
+            if (action.todos && action.todos.todoText) {
+                newState.todos.push(action.todos);
+            }
             return newState;
         }
         default:
